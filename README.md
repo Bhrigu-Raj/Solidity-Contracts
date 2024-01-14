@@ -1,66 +1,29 @@
-## Foundry
+# Project Overview
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This repository contains Solidity smart contracts for:
 
-Foundry consists of:
+1. **Token Sale Smart Contract**
+2. **Decentralized Voting System**
+3. **Token Swap Smart Contract**
+4. **Multi-Signature Wallet**
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Folder Structure
 
-## Documentation
+All the contracts are organized in the `src` folder:
 
-https://book.getfoundry.sh/
+```plaintext
+/token-sale-smart-contract
+  /src
+    - TokenSale.sol
 
-## Usage
+/decentralized-voting-system
+  /src
+    - DecentralizedVoting.sol
 
-### Build
+/token-swap-smart-contract
+  /src
+    - TokenSwap.sol
 
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+/multi-signature-wallet
+  /src
+    - MultiSigWallet.sol

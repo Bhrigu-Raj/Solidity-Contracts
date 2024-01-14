@@ -160,7 +160,7 @@ contract TokenSale is Ownable {
         currentPhase = SalePhase.PublicSale;
     }
 
-    function calculateTokens(uint256 _amount) internal view returns (uint256) {
+    function calculateTokens(uint256 _amount) internal pure returns (uint256) {
         // Customize this function based on your token price or conversion rate
         // For simplicity, assuming 1 Ether = 1 Token
         return _amount;
